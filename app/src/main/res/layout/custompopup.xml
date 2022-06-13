@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:background="#74737A"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtclose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Early Access CGPA Calculator"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:padding="20sp"/>
+
+            <TextView
+                android:id="@+id/txtclose2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Input your latest CGPA and Credits earned,
+\nthen input your expected grades in the current semester's courses.\nThis way you might have an idea
+about your upcoming CGPA with the expected/predicted grades and figure out your goals."
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:padding="20sp"/>
+
+            <TextView
+                android:id="@+id/txtclose2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="© Md. Akil Tahsin | May 2021"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:padding="20sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

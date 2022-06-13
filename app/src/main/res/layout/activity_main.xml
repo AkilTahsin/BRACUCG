@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:background="#101010"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="CGPA Calculator"
+                android:textSize="30sp"
+                android:textColor="#FFEC59"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/oldCGPAText"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:background="#FFFFFF"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:textColorHint="#777777"
+                android:hint="Previous CGPA"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/oldCreditText"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:hint="Completed Credits"
+                android:background="#FFFFFF"
+                android:padding="10sp"
+                android:layout_marginBottom="10sp"
+                android:textColorHint="#777777"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+
+
+            <Button
+                android:id="@+id/enter"
+                android:layout_marginBottom="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Enter"
+                app:backgroundTint="#F44336" />
+
+            <EditText
+                android:id="@+id/courseGradeText"
+                android:textSize="30sp"
+                android:textColor="#325D79"
+                android:textColorHint="#777777"
+                android:hint="Course Grade"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/courseCreditText"
+                android:textSize="30sp"
+                android:textColor="#325D79"
+                android:hint="Course Credits"
+                android:textColorHint="#777777"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/addCourse"
+                android:layout_marginBottom="30sp"
+                android:layout_marginTop="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add Course"
+                app:backgroundTint="#F44336" />
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_marginBottom="0sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate new CGPA"
+                app:backgroundTint="#673AB7" />
+            <TextView
+                android:id="@+id/textView"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:hint=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Reset"
+                app:backgroundTint="#E91E63" />
+
+            <Button
+                android:id="@+id/help"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/roundedbutton"
+                android:onClick="ShowPopup"
+                android:padding="5sp"
+                android:text="\?"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:backgroundTint="#5A5A5A" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
